@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa's Christmas Kitchen</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #fff9f0;
+            color: #253b2b;
+        }
+
+        header {
+            background: #17452c;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            color: #f8d77a;
+        }
+
+        nav {
+            background: #a52626;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f8d77a;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(
+                rgba(15, 45, 27, 0.75),
+                rgba(15, 45, 27, 0.75)
+            ), url("https://images.unsplash.com/photo-1512389142860-9c449e58a543");
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .hero button {
+            margin-top: 25px;
+            padding: 13px 25px;
+            background: #d6a83f;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0 25px;
+            font-size: 30px;
+            color: #a52626;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .food-card {
+            background: white;
+            width: 270px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px #0002;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .food-card h3 {
+            margin: 15px;
+            color: #17452c;
+        }
+
+        .food-card p {
+            padding: 0 15px;
+        }
+
+        .food-card button {
+            margin-top: 15px;
+            background: #a52626;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .food-card button:hover {
+            background: #17452c;
+        }
+
+        .about {
+            background: #17452c;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+            margin-top: 40px;
+        }
+
+        footer {
+            background: #a52626;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🎄 Santa's Christmas Kitchen 🎄</h1>
+    <p>Delicious food, festive flavours and Christmas magic!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#foods">Christmas Foods</a>
+    <a href="#about">About</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to Christmas!</h2>
+    <p>Discover delicious recipes for the most wonderful time of the year.</p>
+    <button onclick="document.getElementById('foods').scrollIntoView({behavior:'smooth'})">
+        Explore Christmas Foods
+    </button>
+</section>
+
+<h2 class="section-title" id="foods">🍪 Christmas Food Menu</h2>
+
+<div class="food-container">
+
+    <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Roast dinner">
+        <h3>Christmas Roast</h3>
+        <p>A delicious festive roast with potatoes and vegetables.</p>
+       <button onclick="window.location.href='crismas foodroast.html'">
+    View Recipe
+</button>
+    </div>
+
+    <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9" alt="Christmas cookies">
+        <h3>Christmas Cookies</h3>
+        <p>Sweet, crunchy cookies decorated for Christmas.</p>
+        <button onclick="window.location.href='food2cookies.html'">
+    View Recipe
+</button>
+    </div>
+
+    
+<div class="food-card">
+    <img src="cranberryorangechristmas.webp"
+         alt="Christmas festive drink">
+
+    <h3>Christmas Drink</h3>
+
+    <p>A delicious festive drink to warm you up during the Christmas season.</p>
+
+    <button onclick="window.location.href='cranberry.html'">
+        View Recipe
+    </button>
+</div>
+
+
+</div>
+
+<section class="about" id="about">
+    <h2>About Our Kitchen 🎅</h2>
+    <p>We bring Christmas magic to your kitchen with delicious festive recipes.</p>
+    <p>Make memories, enjoy good food and celebrate Christmas!</p>
+</section>
+
+<footer>
+    <p>© 2026 Santa's Christmas Kitchen | Merry Christmas! 🎄</p>
+</footer>
+
+<script>
+    function showRecipe(name, instructions) {
+        alert(name + "\n\n" + instructions);
+    }
+</script>
+
+</body>
+</html>
